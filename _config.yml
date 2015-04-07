@@ -1,4 +1,6 @@
-slogan: "Yet another bootstrap theme."
+slogan:
+  title: "123"
+  icon: "fa fa-child"
 
 menu:
   - title: Archives
@@ -32,17 +34,28 @@ links:
     intro: "My Linkin account."
     icon: "fa fa-linkedin"
 
+update:
+  - title: "添加addthis分享插件"
+    icon: "fa fa-check-square"
+
 widgets:
 - search
 - category
 - tagcloud
-- recent_posts  
+- weibo
+- recent_posts
+- recent_update
 - links
 
-rss: 
+rss:
+addthis:
 fancybox: true
 favicon: favicon.png
 duoshuo_shortname:
+swift_search:
+cdn_url:
+google_site_verification:
+baidu_site_verification:
 
 # Analytics
 google_analytics:
