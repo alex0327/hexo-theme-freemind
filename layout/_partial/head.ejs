@@ -37,23 +37,35 @@
     <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
 
+  <!-- add google-site-verification -->
+  <% if (theme.google_site_verification){ %>
+    <meta name="google-site-verification" content="<%= theme.google_site_verification %>" />
+  <% } %>
+
+  <!-- add baidu-site-verification -->
+  <% if (theme.baidu_site_verification){ %>
+    <meta name="baidu-site-verification" content="<%= theme.baidu_site_verification %>" />
+  <% } %>
   <% if (theme.rss){ %>
     <link rel="alternative" href="<%- config.root %><%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
   <% } %>
   <% if (theme.favicon){ %>
-    <link href="<%- config.root %><%- theme.favicon %>" rel="icon">
+    <link href="<%= theme.cdn_url %><%- theme.favicon %>" rel="icon">
   <% } %>
   
-  <link rel="stylesheet" href="<%- config.root %>css/bootstrap.min.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="<%- config.root %>css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="<%= theme.cdn_url %>css_bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="<%= theme.cdn_url %>css_font-awesome.css" media="screen" type="text/css">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="<%- config.root %>css/highlight.css" media="screen" type="text/css">
-  <link rel="stylesheet" href="<%- config.root %>css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="<%= theme.cdn_url %>css_highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="<%= theme.cdn_url %>css_google-fonts.css" media="screen" type="text/css">
   <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-
-  <script src="<%- config.root %>js/jquery-2.0.3.min.js"></script>
+  
+  <script src="<%= theme.cdn_url %>js_jquery-2.0.3.min.js"></script>
 
   <!-- analytics -->
   <%- partial('post/analytics') %>
 
+  <!-- add fork me flag -->
+  <a href="https://github.com/zhi1ong" target="_blank">
+  <img style="position: absolute; top: 0; right: 0; border: 0; margin: 0; z-index:1031;" src="<%= theme.cdn_url %>logo_forkme_right_white_ffffff.png"></a>
 </head>

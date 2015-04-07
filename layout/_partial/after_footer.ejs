@@ -3,10 +3,10 @@
   <span>▲</span> 
 </a>
 
-<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
-<script src="<%- config.root %>js/gallery.js"></script>
-<script src="<%- config.root %>js/bootstrap.min.js"></script>
-<script src="<%- config.root %>js/main.js"></script>
+<script src="<%= theme.cdn_url %>js_jquery.imagesloaded.min.js"></script>
+<script src="<%= theme.cdn_url %>js_gallery.js"></script>
+<script src="<%= theme.cdn_url %>js_bootstrap.min.js"></script>
+<script src="<%= theme.cdn_url %>js_main.js"></script>
 
 <% if (theme.duoshuo_shortname) { %>
 <script type="text/javascript">
@@ -33,11 +33,28 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 </script>
 <% } %>
 <% if (theme.fancybox){ %>
-<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript">
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
-</script>
+  <link rel="stylesheet" href="<%= theme.cdn_url %>css_jquery.fancybox.css" media="screen" type="text/css">
+  <script src="<%= theme.cdn_url %>css_jquery.fancybox.pack.js"></script>
+  <script type="text/javascript">
+  (function($){
+    $('.fancybox').fancybox();
+  })(jQuery);
+  </script>
+<% } %>
+
+<% if (theme.addthis){ %>
+  <script type="text/javascript">
+  var jiathis_config = {data_track_clickback:'true'};
+  </script>
+  <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=<%= theme.addthis %>" charset="utf-8"></script>
+<% } %>
+
+<% if (theme.swift_search){ %>
+  <script type="text/javascript">
+    (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+    })(window,document,'script','//s.swiftypecdn.com/install/v1/st.js','_st');
+    _st('install','<%= theme.swift_search %>');
+  </script>
 <% } %>
