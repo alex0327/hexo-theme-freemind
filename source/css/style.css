@@ -1,4 +1,36 @@
 /* =============================================================================
+   diy
+   ========================================================================== */
+
+.musicbox {
+  display: block;
+}
+
+.alert-diy {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.feature-img {
+  max-width: 60%;
+  margin: 10px auto;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.sae-logo {
+  background: url("http://7u2o7j.com1.z0.glb.clouddn.com/logo_poweredbysae117x12px.gif") no-repeat 0 0;
+  width: 117px;
+  overflow: hidden;
+  text-indent: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  height: 16px;
+}
+
+/* =============================================================================
    container
    ========================================================================== */
 
@@ -91,6 +123,8 @@ body {
   -webkit-transition: all .2s linear;
      -moz-transition: all .2s linear;
           transition: all .2s linear;
+  font-family: 'Architects Daughter', 'Open Sans', "Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
+  font-size: 1.8em;
 }
 
 .navbar-brand:hover {
@@ -261,7 +295,7 @@ blockquote p, blockquote ol, blockquote ul, blockquote li, .slogan{
    ========================================================================== */
 
 img {
-  max-width: 97.5%;
+  max-width: 80%;
   margin: 15px auto;
   display: block;
   width: auto;
@@ -283,6 +317,7 @@ img {
 }
 
 .slogan{
+  font-family: 'Architects Daughter', 'Open Sans', "Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
   font-size: 1.2em;
   color: #888;  
   display:block;
@@ -354,6 +389,12 @@ h4 {
   color: #B94A48;
 }
 
+.saying {
+  text-rendering:optimizelegibility;
+  font-weight:bold;
+  font-family: 'Architects Daughter', 'Open Sans', "Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
+}
+
 .page-header {
   -webkit-background-clip: border-box;
   -webkit-background-origin: padding-box;
@@ -405,6 +446,13 @@ h4 {
 .page h3.title a {
   color: black;
 }
+
+/*
+.page h3.title span.date {
+  position:absolute;
+  right:5px;
+}
+*/
 
 .page h3.title div.article-title {
   width:80%;

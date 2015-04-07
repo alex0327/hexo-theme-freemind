@@ -1,5 +1,5 @@
 categories: 分类
-search: 搜索
+search: 站内搜索
 tags: 标签
 tagcloud: 标签云
 tweets: 推文
@@ -11,5 +11,7 @@ archive_b: "归档：%s"
 page: "第 %d 页"
 recent_posts: 最新文章
 description: 摘要
-read_more: 阅读此文
+read_more: 详细内容请阅读此文
 links: 链接
+weibo: 新浪微博
+recent_update: 网站动态

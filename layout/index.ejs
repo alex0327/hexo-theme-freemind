@@ -1,5 +1,9 @@
 <div class="page-header">
-  <h1><% if (config.subtitle){ %><%= config.subtitle %><% } else { %><%= config.title %><% } %></h1>
+  <h1>
+  	<div class="saying">
+		<% if (config.subtitle){ %><%= config.subtitle %><% } else { %><%= config.title %><% } %>
+	</div>
+  </h1>
 </div>
 
 <%- partial('_partial/index', {index: true}) %>

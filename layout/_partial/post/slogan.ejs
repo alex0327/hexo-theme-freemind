@@ -1,4 +1,6 @@
-<div class="slogan">
-      <i class="fa fa-heart"></i>
-      <%= theme.slogan %>
-</div>    
+<% if (theme.slogan){ %>
+	<div class="slogan">
+	      <i class="<%= theme.slogan.icon %>"></i>
+	      <%= theme.slogan.title %>
+	</div>
+<% } %>

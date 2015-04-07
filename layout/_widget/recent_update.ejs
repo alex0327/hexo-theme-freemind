@@ -1,0 +1,13 @@
+<% if (theme.update.length){ %>
+<div class="widget">
+	<h4><%= __('recent_update') %></h4>
+	<ul class="blogroll list-unstyled">
+	<% for (var i in theme.update){ %>
+		<li>
+			<i class="<%- theme.update[i].icon %>"></i>
+			<%- theme.update[i].title %>
+		</li>
+	<% } %>
+	</ul>
+</div>
+<% } %>
